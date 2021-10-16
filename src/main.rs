@@ -1,3 +1,10 @@
+mod practices;
+
+use practices::*;
+
 fn main() {
-    println!("Hello, world!");
+    let x = p01_anyhow::run().unwrap();
+    println!("{}", x);
+
+    p02_struct_string_field::run();
 }
